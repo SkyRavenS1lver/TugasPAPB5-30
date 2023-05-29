@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:color="#50FFFFFF"
+        android:visibility="gone"
+        />
+    <VideoView
+        android:clickable="false"
+        android:focusable="false"
+        android:id="@+id/imageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="4:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/imageview"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <Button
+            android:id="@+id/BTNfade"
+            style="@style/TextAppearance.AppCompat.Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="Fade"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/changeModeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:elevation="100dp"
+        android:onClick="changeMode"
+        android:src="@drawable/baseline_dark_mode_24"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toTopOf="@id/optionsButton"
+        app:layout_constraintEnd_toEndOf="@id/optionsButton"
+        app:maxImageSize="30dp"
+        android:visibility="gone"
+        />
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/optionsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="@dimen/dimen2"
+        android:elevation="100dp"
+        android:src="@drawable/baseline_add_24"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:maxImageSize="30dp"
+        android:onClick="appearButton"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

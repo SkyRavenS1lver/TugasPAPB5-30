@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Hall of Game</string>
+    <string name="title_activity_maps" translatable="false">@string/app_name</string>
+    <string name="splashDesc">"Your friendly traveling companion"</string>
+    <string name="qibla">Qibla Direction</string>
+    <string name="notSupported">Not Supported</string>
+    <string name="appwidget_text" translatable="false">EXAMPLE</string>
+    <string name="add_widget" translatable="false">Add widget</string>
+    <string name="app_widget_description" translatable="false">This is an app widget description</string>
+    <string name="temp">"Temp: "</string>
+    <string name="humidity">"Humid: "</string>
+    <string name="poiInfo">Click Me Again For More Detail!</string>
+    <string name="direcInfo">Click Me Again To Get Direction Here!</string>
+    <string name="Err_Message">Location Not Found!</string>
+    <string name="destination">Your Destination</string>
+
+</resources>
