@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     android:id="@+id/bg"
     >
+    <TextView
+        android:fontFamily="sans-serif-condensed"
+        android:id="@+id/title"
+        android:text="Hall of Game"
+        android:textSize="75sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="25dp"
+        android:textAllCaps="true"
+        />
 
     <RelativeLayout
         android:id="@+id/loading"
@@ -20,14 +32,14 @@
         />
     <VideoView
         android:clickable="false"
-        android:focusable="false"
         android:id="@+id/imageview"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintDimensionRatio="4:3"
+        app:layout_constraintDimensionRatio="2:3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <LinearLayout
         android:id="@+id/linear1"
@@ -38,14 +50,37 @@
         android:orientation="horizontal"
         android:weightSum="3">
         <Button
-            android:id="@+id/BTNfade"
+            android:id="@+id/btn1"
+            android:enabled="false"
+            android:backgroundTint="@color/quantum_grey"
             style="@style/TextAppearance.AppCompat.Widget.Button"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:padding="3dp"
-            android:text="Fade"
+            android:text="Pac-Man"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btn2"
+            style="@style/TextAppearance.AppCompat.Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="Snake Game"
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btn3"
+            style="@style/TextAppearance.AppCompat.Widget.Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:textSize="13sp"
+            android:text="Space Invaders"
             android:textColor="@color/white" />
 
     </LinearLayout>
